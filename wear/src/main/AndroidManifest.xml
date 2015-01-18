@@ -23,30 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.droids4dev.wearapp.MyStubBroadcastActivity"
-            android:label="MyStubBroadcastActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.droids4dev.wearapp.MyDisplayActivity"
-            android:allowEmbedded="true"
-            android:exported="true"
-            android:taskAffinity=""
-            android:theme="@android:style/Theme.DeviceDefault.Light" >
-        </activity>
-
-        <receiver
-            android:name="com.droids4dev.wearapp.MyPostNotificationReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="com.droids4dev.wearapp.SHOW_NOTIFICATION" />
-            </intent-filter>
-        </receiver>
         <service android:name=".DataLayerListenerService">
             <intent-filter>
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
